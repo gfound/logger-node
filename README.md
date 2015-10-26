@@ -2,6 +2,33 @@
 
 基于bunyan的日志系统，可以输出比较漂亮的打印日志格式，也可以输出成JSON格式。
 
+## 安装日志处理器
+
+1、如下所示，在package.json里面加入地址
+
+```
+{
+  "name": "TcpNode",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jinlei",
+  "dependencies": {
+    "logger-node":"git://github.com/gfound/logger-node.git"
+  }
+```
+
+2、使用NPM安装
+
+```
+npm install
+```
+
 ## 创建日志处理器
 
 创建一个日志处理器。
