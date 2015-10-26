@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "jinlei",
+  "main": "lib/logger-node.js",
+  "author": "lordking",
   "dependencies": {
     "bunyan": "^1.5.1"
   }
