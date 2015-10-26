@@ -19,7 +19,7 @@
   },
   "author": "jinlei",
   "dependencies": {
-    "logger-node":"git://github.com/gfound/logger-node.git"
+    "logger-node":"git://github.com/gfound/logger-node.git#v1.0.0"
   }
 ```
 
