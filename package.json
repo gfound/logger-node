@@ -1,11 +1,13 @@
 {
-  "name": "logger-node",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "main": "lib/logger-node.js",
-  "author": "lordking",
-  "dependencies": {
-    "bunyan": "^1.5.1"
-  }
+	"name": "logger-node",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"main": "lib/logger-node.js",
+	"author": "lordking",
+	"dependencies": {
+		"bunyan": "^1.5.1",
+		"mongoose": "^4.1.7",
+		 "async": "^0.9.0"
+	}
 }
