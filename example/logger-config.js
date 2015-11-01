@@ -8,7 +8,7 @@ module.exports = {
 
 	//输出到Kafka
 	kafka: process.env.LOG_KAFKA || true,
-	kafkaUrl: process.env.LOG_KAFKA_URL || 'http://localhost:/test',
+	kafkaUrl: process.env.LOG_KAFKA_URL || 'http://localhost:8082/topics/test',
 	
 	//输出到mongodb数据库
 	db: process.env.LOG_DB || true,
