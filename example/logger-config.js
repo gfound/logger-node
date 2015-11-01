@@ -6,9 +6,9 @@ module.exports = {
 	//输出到控制台
 	stdout: process.env.LOG_STOUT || true,
 
-	//输出到日志服务器
-	service: process.env.LOG_SERVICE || false,
-	serviceUrl: process.env.LOG_SERVICE_URL || '',
+	//输出到Kafka
+	kafka: process.env.LOG_KAFKA || true,
+	kafkaUrl: process.env.LOG_KAFKA_URL || 'http://localhost:/test',
 	
 	//输出到mongodb数据库
 	db: process.env.LOG_DB || true,
