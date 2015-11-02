@@ -1,10 +1,10 @@
 module.exports = {
 	name: process.env.LOG_NAME || 'loggerSample',
-	json: process.env.LOG_JSON || false,
 	level: process.env.LOG_LEVEL || 'trace',
 
 	//输出到控制台
 	stdout: process.env.LOG_STOUT || true,
+	json: process.env.LOG_JSON || false,
 
 	//输出到Kafka
 	kafka: process.env.LOG_KAFKA || true,
