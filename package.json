@@ -1,14 +1,19 @@
 {
-	"name": "logger-node",
-	"version": "1.0.2",
-	"description": "",
-	"private": true,
-	"main": "lib/logger-node.js",
-	"author": "lordking",
-	"dependencies": {
-		"bunyan": "^1.5.1",
-		"mongoose": "^4.1.7",
-		 "async": "^0.9.0",
-		 "request": "^2.55.0"
-	}
+  "name": "logger-node",
+  "version": "1.0.2call",
+  "description": "",
+  "private": true,
+  "main": "lib/logger-node.js",
+  "author": "lordking",
+  "dependencies": {
+    "async": "^0.9.0",
+    "binary": "^0.3.0",
+    "buffer-crc32": "^0.2.5",
+    "buffermaker": "^1.2.0",
+    "bunyan": "^1.7.0",
+    "mongoose": "^4.4.4",
+    "node-int64": "^0.4.0",
+    "optimist": "^0.6.1",
+    "request": "^2.69.0"
+  }
 }
