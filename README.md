@@ -40,10 +40,18 @@ module.exports = {
   stdout: process.env.LOG_STOUT || true,  //是否输出到控制台
   json: process.env.LOG_JSON || false,    //如果是，是否输出成JSON格式
 
-  //输出到Kafka
-  kafka: process.env.LOG_KAFKA || true,   //是否输出到kafka
-  kafkaUrl: process.env.LOG_KAFKA_URL || 'http://localhost:8082/topics/test', //kafka输入的地址
-  
+  //输出到Kafka HTTP地址
+	kafkaHTTP: process.env.LOG_KAFKA_HTTP || false,
+	kafkaUrl: process.env.LOG_KAFKA_URL || 'http://localhost:8082/topics/test',
+
+	//输出到Kafka
+	kafka: process.env.LOG_KAFKA || true,
+	kafkaServer: {
+		host: process.env.KAFKA_HOST || '192.168.0.176',
+		port: process.env.KAFKA_PORT || 9092,
+		topic:process.env.KAFKA_TOPIC || 'calllog'
+	},
+
   //输出到mongodb数据库
   db: process.env.LOG_DB || true, //是否输出到mongodb
   dbConfig: {
@@ -78,7 +86,7 @@ var loggerNode = require('../lib/logger-node');
 var logger = loggerNode.getLogger();
 ```
 
-调用日志
+** 调用日志 **
 
 ```
 logger.trace('hi');
@@ -95,7 +103,8 @@ logger.fatal('hi');
 
 ```
 
-也可以加入自定义的JSON内容。当日志输出到mongodb、json、kafka中，就可以看到加入的json内容。
+** 如果日志输出到mongodb、json、kafka中，就可以看到加入的json内容。**
+
 ```
 logger.trace({username, 'test1'}, 'hi');
 
@@ -111,8 +120,19 @@ logger.fatal({username, 'test1'}, 'hi');
 
 ```
 
+** 如果日志需要输出到mongodb、kafka中，必须在自定义内容前面加入{report:true}。 **
 
+```
+logger.trace({report, true}, 'hi');
 
+logger.debug({report, true}, 'hi');
 
+logger.info({report, true}, 'hi');
 
+logger.warn({report, true}, 'hi');
 
+logger.error({report, true}, 'hi');
+
+logger.fatal({report, true}, 'hi');
+
+```
