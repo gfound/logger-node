@@ -16,7 +16,7 @@ hello();
 
 var callLog = {};
 callLog.report = true;
-callLog.content = "test";
+callLog.content = "test中文";
 callLog.from = "admin"
 callLog.to = "189"
 callLog.msgType = "audio";
