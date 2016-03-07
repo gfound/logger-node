@@ -1,6 +1,6 @@
 {
   "name": "logger-node",
-  "version": "1.0.2call",
+  "version": "1.0.3",
   "description": "",
   "private": true,
   "main": "lib/logger-node.js",
@@ -10,8 +10,8 @@
     "binary": "^0.3.0",
     "buffer-crc32": "^0.2.5",
     "buffermaker": "^1.2.0",
-    "bunyan": "^1.7.0",
-    "mongoose": "^4.4.4",
+    "bunyan": "^1.7.1",
+    "mongoose": "^4.4.6",
     "node-int64": "^0.4.0",
     "optimist": "^0.6.1",
     "request": "^2.69.0"
