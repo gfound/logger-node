@@ -8,10 +8,10 @@ module.exports = {
 
   //上报指定日志的服务配置
   report: {
-    type: process.env.LOG_KAFKA_TYPE || 'kafka', //类型有：kafka_http、kafka、mongo
+    type: process.env.LOG_KAFKA_TYPE || 'mongo', //类型有：http、kafka、mongo
 
     //输出到Kafka HTTP地址
-    kafkaUrl: process.env.LOG_KAFKA_URL || 'http://localhost:8082/topics/test',
+    url: process.env.LOG_URL || 'http://localhost:8082/topics/test',
 
     //输出到Kafka
     kafkaConfig: {

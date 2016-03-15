@@ -24,4 +24,4 @@ callLog.timestamp = "2016-02-22 11:34:34.854";
 callLog.action = "receive";
 callLog.module = "callServer-" + os.hostname();
 
-logger.info(callLog)
+logger.info(callLog, "report a log")
